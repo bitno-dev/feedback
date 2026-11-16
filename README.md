@@ -1,3 +1,5 @@
+<img src=".github/assets/bitno-feedback.svg" width="96" alt="">
+
 # Bitno
 
 **Lightweight, private and secure developer tools for VS Code. Built by a developer, for developers.**
