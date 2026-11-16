@@ -1,0 +1,45 @@
+name: Feature request
+description: Something a Bitno extension should do, or a service, language or tool it should support.
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: extension
+    attributes:
+      label: Extension
+      options:
+        - Services
+        - Language Server for Java
+        - Language Server for Kotlin
+        - Language Server for Gradle
+        - Language Server for Maven
+        - Language Server for Bash
+        - Markdown Language Server
+        - YAML Language Server
+        - TOML Language Server
+        - EditorConfig
+        - Convert
+        - Paths
+        - A new extension
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What you're trying to do, and what gets in the way today.
+      placeholder: When I …, I have to …
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would solve it
+      description: How you'd like it to work. A sketch or a screenshot of another tool helps.
+  - type: textarea
+    id: today
+    attributes:
+      label: What you use today
+      description: The tool or workaround you use for this now.
+  - type: markdown
+    attributes:
+      value: Each extension keeps to what its Marketplace page says it contacts. If your request needs a new network call, say where to and why, and how you'd turn it off.

@@ -1,0 +1,86 @@
+name: Bug
+description: Something in a Bitno extension doesn't work as it should.
+labels: [bug]
+body:
+  - type: dropdown
+    id: extension
+    attributes:
+      label: Extension
+      options:
+        - Services
+        - Language Server for Java
+        - Language Server for Kotlin
+        - Language Server for Gradle
+        - Language Server for Maven
+        - Language Server for Bash
+        - Markdown Language Server
+        - YAML Language Server
+        - TOML Language Server
+        - EditorConfig
+        - Convert
+        - Paths
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: In the Extensions view, or from `code --list-extensions --show-versions | grep bitno`.
+      placeholder: 2026.11.9
+    validations:
+      required: true
+  - type: input
+    id: vscode
+    attributes:
+      label: VS Code version
+      description: Help → About.
+      placeholder: "1.145.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Windows with WSL
+        - Remote (SSH, container, Codespaces)
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: From opening VS Code to the problem. A small file or project that shows it helps most.
+      placeholder: |
+        1. Open a folder with …
+        2. …
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: A screenshot or a short recording helps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Open View → Output and pick the extension in the list (for a language server, clicking the `{}` beside the language mode opens it too), and paste the lines around the problem. Remove paths, hostnames, passwords and tokens first.
+      render: text
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: "For example: the build tool and its version, the service and its version (Postgres 17, Kafka 4.1), other extensions that might be involved."
