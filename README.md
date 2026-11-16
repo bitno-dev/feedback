@@ -3,8 +3,6 @@
   <img src=".github/assets/bitno-lockup.svg" width="240" alt="Bitno">
 </picture>
 
-# Bitno
-
 **Lightweight, private and secure developer tools for VS Code. Built by a developer, for developers.**
 
 This repository is where you report bugs, ask for features and ask questions about any Bitno extension. It holds no source code.
