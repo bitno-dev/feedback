@@ -1,4 +1,7 @@
-<img src=".github/assets/bitno-feedback.svg" width="96" alt="">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/bitno-lockup-white.svg">
+  <img src=".github/assets/bitno-lockup.svg" width="240" alt="Bitno">
+</picture>
 
 # Bitno
 
